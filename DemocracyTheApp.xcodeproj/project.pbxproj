@@ -13,6 +13,22 @@
 		96141CD315DF0A1200955F31 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 96141CD115DF0A1200955F31 /* InfoPlist.strings */; };
 		96141CD515DF0A1200955F31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 96141CD415DF0A1200955F31 /* main.m */; };
 		96141CD915DF0A1200955F31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 96141CD815DF0A1200955F31 /* AppDelegate.m */; };
+		96141CE215DF0AB100955F31 /* IssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96141CE015DF0AB100955F31 /* IssuesViewController.m */; };
+		96141CE315DF0AB100955F31 /* IssuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96141CE115DF0AB100955F31 /* IssuesViewController.xib */; };
+		96141CE615DF0CC500955F31 /* IssuesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 96141CE515DF0CC500955F31 /* IssuesModel.m */; };
+		96141CF215DF11B800955F31 /* TabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96141CF015DF11B800955F31 /* TabBarViewController.m */; };
+		96141CF315DF11B800955F31 /* TabBarViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96141CF115DF11B800955F31 /* TabBarViewController.xib */; };
+		96141CF715DF15B600955F31 /* NewIssuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96141CF515DF15B600955F31 /* NewIssuesViewController.m */; };
+		96141CF815DF15B600955F31 /* NewIssuesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96141CF615DF15B600955F31 /* NewIssuesViewController.xib */; };
+		96141D2615DF1AB500955F31 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D1E15DF1AB400955F31 /* AudioToolbox.framework */; };
+		96141D2715DF1AB500955F31 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D1F15DF1AB400955F31 /* CFNetwork.framework */; };
+		96141D2815DF1AB500955F31 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2015DF1AB400955F31 /* libz.1.1.3.dylib */; };
+		96141D2915DF1AB500955F31 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2115DF1AB400955F31 /* MobileCoreServices.framework */; };
+		96141D2A15DF1AB500955F31 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2215DF1AB400955F31 /* QuartzCore.framework */; };
+		96141D2B15DF1AB500955F31 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2315DF1AB400955F31 /* Security.framework */; };
+		96141D2C15DF1AB500955F31 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2415DF1AB400955F31 /* StoreKit.framework */; };
+		96141D2D15DF1AB500955F31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2515DF1AB400955F31 /* SystemConfiguration.framework */; };
+		96DB901B15DF1F0B005E5550 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DB901A15DF1F0B005E5550 /* Parse.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +42,27 @@
 		96141CD615DF0A1200955F31 /* DemocracyTheApp-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DemocracyTheApp-Prefix.pch"; sourceTree = "<group>"; };
 		96141CD715DF0A1200955F31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		96141CD815DF0A1200955F31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		96141CDF15DF0AB100955F31 /* IssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IssuesViewController.h; path = ../IssuesViewController.h; sourceTree = "<group>"; };
+		96141CE015DF0AB100955F31 /* IssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IssuesViewController.m; path = ../IssuesViewController.m; sourceTree = "<group>"; };
+		96141CE115DF0AB100955F31 /* IssuesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = IssuesViewController.xib; path = ../IssuesViewController.xib; sourceTree = "<group>"; };
+		96141CE415DF0CC500955F31 /* IssuesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IssuesModel.h; path = ../IssuesModel.h; sourceTree = "<group>"; };
+		96141CE515DF0CC500955F31 /* IssuesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IssuesModel.m; path = ../IssuesModel.m; sourceTree = "<group>"; };
+		96141CEF15DF11B800955F31 /* TabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TabBarViewController.h; path = ../TabBarViewController.h; sourceTree = "<group>"; };
+		96141CF015DF11B800955F31 /* TabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = TabBarViewController.m; path = ../TabBarViewController.m; sourceTree = "<group>"; };
+		96141CF115DF11B800955F31 /* TabBarViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TabBarViewController.xib; path = ../TabBarViewController.xib; sourceTree = "<group>"; };
+		96141CF415DF15B600955F31 /* NewIssuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NewIssuesViewController.h; path = ../NewIssuesViewController.h; sourceTree = "<group>"; };
+		96141CF515DF15B600955F31 /* NewIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewIssuesViewController.m; path = ../NewIssuesViewController.m; sourceTree = "<group>"; };
+		96141CF615DF15B600955F31 /* NewIssuesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewIssuesViewController.xib; path = ../NewIssuesViewController.xib; sourceTree = "<group>"; };
+		96141CF915DF192E00955F31 /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Keys.h; path = ../Keys.h; sourceTree = "<group>"; };
+		96141D1E15DF1AB400955F31 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		96141D1F15DF1AB400955F31 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		96141D2015DF1AB400955F31 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		96141D2115DF1AB400955F31 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		96141D2215DF1AB400955F31 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		96141D2315DF1AB400955F31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		96141D2415DF1AB400955F31 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		96141D2515DF1AB400955F31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96DB901A15DF1F0B005E5550 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = DemocracyTheApp/Parse.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,9 +70,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96141D2615DF1AB500955F31 /* AudioToolbox.framework in Frameworks */,
+				96141D2715DF1AB500955F31 /* CFNetwork.framework in Frameworks */,
+				96141D2815DF1AB500955F31 /* libz.1.1.3.dylib in Frameworks */,
+				96141D2915DF1AB500955F31 /* MobileCoreServices.framework in Frameworks */,
+				96141D2A15DF1AB500955F31 /* QuartzCore.framework in Frameworks */,
+				96141D2B15DF1AB500955F31 /* Security.framework in Frameworks */,
+				96141D2C15DF1AB500955F31 /* StoreKit.framework in Frameworks */,
+				96141D2D15DF1AB500955F31 /* SystemConfiguration.framework in Frameworks */,
+				96141CCD15DF0A1200955F31 /* CoreGraphics.framework in Frameworks */,
 				96141CC915DF0A1200955F31 /* UIKit.framework in Frameworks */,
 				96141CCB15DF0A1200955F31 /* Foundation.framework in Frameworks */,
-				96141CCD15DF0A1200955F31 /* CoreGraphics.framework in Frameworks */,
+				96DB901B15DF1F0B005E5550 /* Parse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,6 +108,15 @@
 		96141CC715DF0A1200955F31 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				96DB901A15DF1F0B005E5550 /* Parse.framework */,
+				96141D1E15DF1AB400955F31 /* AudioToolbox.framework */,
+				96141D1F15DF1AB400955F31 /* CFNetwork.framework */,
+				96141D2015DF1AB400955F31 /* libz.1.1.3.dylib */,
+				96141D2115DF1AB400955F31 /* MobileCoreServices.framework */,
+				96141D2215DF1AB400955F31 /* QuartzCore.framework */,
+				96141D2315DF1AB400955F31 /* Security.framework */,
+				96141D2415DF1AB400955F31 /* StoreKit.framework */,
+				96141D2515DF1AB400955F31 /* SystemConfiguration.framework */,
 				96141CC815DF0A1200955F31 /* UIKit.framework */,
 				96141CCA15DF0A1200955F31 /* Foundation.framework */,
 				96141CCC15DF0A1200955F31 /* CoreGraphics.framework */,
@@ -72,6 +127,18 @@
 		96141CCE15DF0A1200955F31 /* DemocracyTheApp */ = {
 			isa = PBXGroup;
 			children = (
+				96141CEF15DF11B800955F31 /* TabBarViewController.h */,
+				96141CF015DF11B800955F31 /* TabBarViewController.m */,
+				96141CF415DF15B600955F31 /* NewIssuesViewController.h */,
+				96141CF515DF15B600955F31 /* NewIssuesViewController.m */,
+				96141CF615DF15B600955F31 /* NewIssuesViewController.xib */,
+				96141CF115DF11B800955F31 /* TabBarViewController.xib */,
+				96141CDF15DF0AB100955F31 /* IssuesViewController.h */,
+				96141CE015DF0AB100955F31 /* IssuesViewController.m */,
+				96141CE115DF0AB100955F31 /* IssuesViewController.xib */,
+				96141CF915DF192E00955F31 /* Keys.h */,
+				96141CE415DF0CC500955F31 /* IssuesModel.h */,
+				96141CE515DF0CC500955F31 /* IssuesModel.m */,
 				96141CD715DF0A1200955F31 /* AppDelegate.h */,
 				96141CD815DF0A1200955F31 /* AppDelegate.m */,
 				96141CCF15DF0A1200955F31 /* Supporting Files */,
@@ -142,6 +209,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				96141CD315DF0A1200955F31 /* InfoPlist.strings in Resources */,
+				96141CE315DF0AB100955F31 /* IssuesViewController.xib in Resources */,
+				96141CF315DF11B800955F31 /* TabBarViewController.xib in Resources */,
+				96141CF815DF15B600955F31 /* NewIssuesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +224,10 @@
 			files = (
 				96141CD515DF0A1200955F31 /* main.m in Sources */,
 				96141CD915DF0A1200955F31 /* AppDelegate.m in Sources */,
+				96141CE215DF0AB100955F31 /* IssuesViewController.m in Sources */,
+				96141CE615DF0CC500955F31 /* IssuesModel.m in Sources */,
+				96141CF215DF11B800955F31 /* TabBarViewController.m in Sources */,
+				96141CF715DF15B600955F31 /* NewIssuesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,6 +299,11 @@
 		96141CDD15DF0A1200955F31 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ParseStarterProject\"",
+					"\"$(SRCROOT)/DemocracyTheApp\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemocracyTheApp/DemocracyTheApp-Prefix.pch";
 				INFOPLIST_FILE = "DemocracyTheApp/DemocracyTheApp-Info.plist";
@@ -236,6 +315,11 @@
 		96141CDE15DF0A1200955F31 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/ParseStarterProject\"",
+					"\"$(SRCROOT)/DemocracyTheApp\"",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemocracyTheApp/DemocracyTheApp-Prefix.pch";
 				INFOPLIST_FILE = "DemocracyTheApp/DemocracyTheApp-Info.plist";
@@ -263,6 +347,7 @@
 				96141CDE15DF0A1200955F31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,6 +7,10 @@
 //
 
 #import "AppDelegate.h"
+#import "IssuesViewController.h"
+#import "TabBarViewController.h"
+#import <Parse/Parse.h>
+
 
 @implementation AppDelegate
 
@@ -16,8 +20,17 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
+    [Parse setApplicationId:@"EMvoj5j7mK4zM6Gny2YlQYxeT1coiUF9V4hWcLTo" clientKey:@"Ma0BcYYqxz13Ch5kWfM09gLhTsnuKEsBFnomHMec"];
+    
+    TabBarViewController *tabBar = [TabBarViewController new];
+    self.window.rootViewController = tabBar;
     return YES;
+    
 }
+
+-(void)tableView:(UITableView*) tableView numberOfRowsInSection:(NSInteger)section{
+};
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {
