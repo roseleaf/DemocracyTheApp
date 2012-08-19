@@ -11,7 +11,8 @@
 #import "NewIssuesViewController.h"
 
 
-@interface TabBarViewController ()
+
+@interface TabBarViewController ()<UINavigationBarDelegate>
 
 @end
 
@@ -31,8 +32,13 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     IssuesViewController *issuesViewController = [IssuesViewController new];
-    NewIssuesViewController *newIssuesViewController = [NewIssuesViewController new];
-    self.viewControllers = [[NSArray alloc] initWithObjects:issuesViewController, newIssuesViewController, nil];
+    issuesViewController.title = @"View Issues";
+    NewIssuesViewController *newIssueView = [NewIssuesViewController new];
+    newIssueView.title = @"Add New Issue";
+    
+    UINavigationController* issueNavController = [[UINavigationController alloc] initWithRootViewController: issuesViewController];
+//    UINavigationController* navController = [
+    self.viewControllers = [[NSArray alloc] initWithObjects:issueNavController, newIssueView, nil];
 }
 
 - (void)viewDidUnload

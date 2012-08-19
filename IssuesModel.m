@@ -11,43 +11,51 @@
 #import <Parse/Parse.h>
 
 @interface IssuesModel()
-+(void) addQuestion:(NSString*)newQuestion;
-+(NSArray*)questions;
-+(void) response:(BOOL) response;
+
 @end
 
 
 @implementation IssuesModel
-+(void) addQuestion:(NSString *)newQuestion{
-    PFObject* question = [PFObject objectWithClassName:@"Question"];
-    [question setObject:newQuestion forKey:@"questionText"];
-    [question save];
+@synthesize issueObjectID;
+@synthesize issueText;
+
+
++(void) addIssue:(NSString *)newIssue{
+    PFObject* issue = [PFObject objectWithClassName:@"Issues"];
+    [issue setObject:newIssue forKey:@"issueText"];
+    [issue save];
 }
 
-+(NSArray*)questions{
-    NSMutableArray* questionTexts = [NSMutableArray new];
-
-    PFQuery* query = [PFQuery queryWithClassName:@"Question"];
-    NSArray* questions =  [query findObjects];//gives you NSArray of PFObjs
++(NSArray*)issues{
     
-    for (PFObject* question in questions) {
-        NSString* questionText = [question objectForKey:@"questionTest"];
-        [questionTexts addObject:questionText];
-    }
-    return questionTexts;
+    PFQuery* query = [PFQuery queryWithClassName:@"Issues"];
+    NSArray* issues =  [query findObjects];//gives you NSArray of PFObjs
+
+    return issues;
 }
 
-+(void) response:(BOOL)response forQuestion:(NSString* )question{
-    PFQuery* query = [PFQuery queryWithClassName:@"Question"];
-    [query whereKey:@"questionText" equalTo:question];
-    
-    PFObject *vote = [PFObject objectWithClassName:@"Question"];
-    [vote setObject:response forKey:@"response"];
-    
-
-    
++(void) vote:(BOOL)vote forIssue:(NSString* )issueID{
+    PFObject *response = [PFObject objectWithClassName:@"Responses"];
+    [response setObject:[NSNumber numberWithBool:vote] forKey:@"vote"];
+    [response setObject:issueID forKey:@"issueID"];
+    [response save];
 }
 
++(NSArray*)resultsForIssues:(NSString* )issueID {
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Responses"];
+    [query whereKey:@"issueID" equalTo:issueID];
+    int totalVotesInt = [[query findObjects] count];
+    [query whereKey:@"vote" equalTo:[NSNumber numberWithBool:YES]];
+    int yesVotesInt = [[query findObjects] count];
+    int noVotesInt = totalVotesInt - yesVotesInt;
+
+    NSNumber* totalVotes = [NSNumber numberWithInt:totalVotesInt];
+    NSNumber* yesVotes = [NSNumber numberWithInt:yesVotesInt];
+    NSNumber* noVotes = [NSNumber numberWithInt:noVotesInt];
+
+    return [NSArray arrayWithObjects:totalVotes, yesVotes, noVotes, nil];
+}
 
 
 @end

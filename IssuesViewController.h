@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface IssuesViewController : UIViewController
+@interface IssuesViewController : UIViewController;
+@property (strong) NSString* objectID;
+@property (strong) NSString* issueText;
 
 @end

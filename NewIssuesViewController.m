@@ -7,12 +7,17 @@
 //
 
 #import "NewIssuesViewController.h"
+#import <Parse/Parse.h>
+#import "IssuesModel.h"
+#import "IssuesViewController.h"
 
-@interface NewIssuesViewController () <UITabBarControllerDelegate>
+@interface NewIssuesViewController () <UITabBarControllerDelegate, UITextFieldDelegate>
+@property (weak, nonatomic) IBOutlet UITextField *issueInput;
 
 @end
 
 @implementation NewIssuesViewController
+@synthesize issueInput;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,11 +31,13 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.issueInput.delegate = self;
+
 }
 
 - (void)viewDidUnload
 {
+    [self setIssueInput:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
@@ -39,6 +46,14 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
+    NSString *newIssue = self.issueInput.text;
+    [IssuesModel addIssue:newIssue];
+    [self.issueInput resignFirstResponder];
+    self.tabBarController.selectedIndex = 0;
+    return NO;
 }
 
 @end

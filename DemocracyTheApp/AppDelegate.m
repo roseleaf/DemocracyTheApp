@@ -9,7 +9,9 @@
 #import "AppDelegate.h"
 #import "IssuesViewController.h"
 #import "TabBarViewController.h"
+#import "NewIssuesViewController.h"
 #import <Parse/Parse.h>
+
 
 
 @implementation AppDelegate
@@ -23,8 +25,12 @@
     
     [Parse setApplicationId:@"EMvoj5j7mK4zM6Gny2YlQYxeT1coiUF9V4hWcLTo" clientKey:@"Ma0BcYYqxz13Ch5kWfM09gLhTsnuKEsBFnomHMec"];
     
+    IssuesViewController *issueView = [IssuesViewController new];
     TabBarViewController *tabBar = [TabBarViewController new];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:issueView];
+
     self.window.rootViewController = tabBar;
+//    self.window.
     return YES;
     
 }

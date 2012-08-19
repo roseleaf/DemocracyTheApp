@@ -28,7 +28,13 @@
 		96141D2B15DF1AB500955F31 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2315DF1AB400955F31 /* Security.framework */; };
 		96141D2C15DF1AB500955F31 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2415DF1AB400955F31 /* StoreKit.framework */; };
 		96141D2D15DF1AB500955F31 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141D2515DF1AB400955F31 /* SystemConfiguration.framework */; };
+		9693475A15E038320023B92D /* IssueResponseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9693475815E038320023B92D /* IssueResponseViewController.m */; };
+		9693475B15E038320023B92D /* IssueResponseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9693475915E038320023B92D /* IssueResponseViewController.xib */; };
+		9693476015E03CF20023B92D /* ShowIssueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9693475E15E03CF20023B92D /* ShowIssueViewController.m */; };
+		9693476115E03CF20023B92D /* ShowIssueViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9693475F15E03CF20023B92D /* ShowIssueViewController.xib */; };
 		96DB901B15DF1F0B005E5550 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DB901A15DF1F0B005E5550 /* Parse.framework */; };
+		96FD794615E05E300061A49B /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD794415E05E300061A49B /* ResultsViewController.m */; };
+		96FD794715E05E300061A49B /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96FD794515E05E300061A49B /* ResultsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,7 +68,16 @@
 		96141D2315DF1AB400955F31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		96141D2415DF1AB400955F31 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		96141D2515DF1AB400955F31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		9693475715E038320023B92D /* IssueResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueResponseViewController.h; sourceTree = "<group>"; };
+		9693475815E038320023B92D /* IssueResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueResponseViewController.m; sourceTree = "<group>"; };
+		9693475915E038320023B92D /* IssueResponseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueResponseViewController.xib; sourceTree = "<group>"; };
+		9693475D15E03CF10023B92D /* ShowIssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowIssueViewController.h; sourceTree = "<group>"; };
+		9693475E15E03CF20023B92D /* ShowIssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowIssueViewController.m; sourceTree = "<group>"; };
+		9693475F15E03CF20023B92D /* ShowIssueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowIssueViewController.xib; sourceTree = "<group>"; };
 		96DB901A15DF1F0B005E5550 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = DemocracyTheApp/Parse.framework; sourceTree = "<group>"; };
+		96FD794315E05E300061A49B /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
+		96FD794415E05E300061A49B /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
+		96FD794515E05E300061A49B /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,20 +142,29 @@
 		96141CCE15DF0A1200955F31 /* DemocracyTheApp */ = {
 			isa = PBXGroup;
 			children = (
-				96141CEF15DF11B800955F31 /* TabBarViewController.h */,
 				96141CF015DF11B800955F31 /* TabBarViewController.m */,
-				96141CF415DF15B600955F31 /* NewIssuesViewController.h */,
-				96141CF515DF15B600955F31 /* NewIssuesViewController.m */,
-				96141CF615DF15B600955F31 /* NewIssuesViewController.xib */,
+				96141CEF15DF11B800955F31 /* TabBarViewController.h */,
 				96141CF115DF11B800955F31 /* TabBarViewController.xib */,
-				96141CDF15DF0AB100955F31 /* IssuesViewController.h */,
+				96141CF515DF15B600955F31 /* NewIssuesViewController.m */,
+				96141CF415DF15B600955F31 /* NewIssuesViewController.h */,
+				96141CF615DF15B600955F31 /* NewIssuesViewController.xib */,
+				9693475E15E03CF20023B92D /* ShowIssueViewController.m */,
+				9693475D15E03CF10023B92D /* ShowIssueViewController.h */,
+				9693475F15E03CF20023B92D /* ShowIssueViewController.xib */,
 				96141CE015DF0AB100955F31 /* IssuesViewController.m */,
+				96141CDF15DF0AB100955F31 /* IssuesViewController.h */,
 				96141CE115DF0AB100955F31 /* IssuesViewController.xib */,
-				96141CF915DF192E00955F31 /* Keys.h */,
-				96141CE415DF0CC500955F31 /* IssuesModel.h */,
 				96141CE515DF0CC500955F31 /* IssuesModel.m */,
-				96141CD715DF0A1200955F31 /* AppDelegate.h */,
+				96141CE415DF0CC500955F31 /* IssuesModel.h */,
+				9693475815E038320023B92D /* IssueResponseViewController.m */,
+				9693475715E038320023B92D /* IssueResponseViewController.h */,
+				9693475915E038320023B92D /* IssueResponseViewController.xib */,
+				96FD794315E05E300061A49B /* ResultsViewController.h */,
+				96FD794415E05E300061A49B /* ResultsViewController.m */,
+				96FD794515E05E300061A49B /* ResultsViewController.xib */,
 				96141CD815DF0A1200955F31 /* AppDelegate.m */,
+				96141CD715DF0A1200955F31 /* AppDelegate.h */,
+				96141CF915DF192E00955F31 /* Keys.h */,
 				96141CCF15DF0A1200955F31 /* Supporting Files */,
 			);
 			path = DemocracyTheApp;
@@ -212,6 +236,9 @@
 				96141CE315DF0AB100955F31 /* IssuesViewController.xib in Resources */,
 				96141CF315DF11B800955F31 /* TabBarViewController.xib in Resources */,
 				96141CF815DF15B600955F31 /* NewIssuesViewController.xib in Resources */,
+				9693475B15E038320023B92D /* IssueResponseViewController.xib in Resources */,
+				9693476115E03CF20023B92D /* ShowIssueViewController.xib in Resources */,
+				96FD794715E05E300061A49B /* ResultsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,6 +255,9 @@
 				96141CE615DF0CC500955F31 /* IssuesModel.m in Sources */,
 				96141CF215DF11B800955F31 /* TabBarViewController.m in Sources */,
 				96141CF715DF15B600955F31 /* NewIssuesViewController.m in Sources */,
+				9693475A15E038320023B92D /* IssueResponseViewController.m in Sources */,
+				9693476015E03CF20023B92D /* ShowIssueViewController.m in Sources */,
+				96FD794615E05E300061A49B /* ResultsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
