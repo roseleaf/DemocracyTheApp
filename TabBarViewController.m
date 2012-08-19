@@ -22,7 +22,6 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
     }
     return self;
 }
@@ -30,22 +29,18 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
     IssuesViewController *issuesViewController = [IssuesViewController new];
     issuesViewController.title = @"View Issues";
     NewIssuesViewController *newIssueView = [NewIssuesViewController new];
     newIssueView.title = @"Add New Issue";
     
     UINavigationController* issueNavController = [[UINavigationController alloc] initWithRootViewController: issuesViewController];
-//    UINavigationController* navController = [
     self.viewControllers = [[NSArray alloc] initWithObjects:issueNavController, newIssueView, nil];
 }
 
 - (void)viewDidUnload
 {
     [super viewDidUnload];
-    // Release any retained subviews of the main view.
-    // e.g. self.myOutlet = nil;
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
