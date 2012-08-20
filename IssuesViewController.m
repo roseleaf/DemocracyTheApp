@@ -70,6 +70,8 @@
     }
     
     UITableViewCell* cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:nil];
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    cell.selectionStyle = UITableViewCellSelectionStyleGray;
     cell.textLabel.text = [issueTexts objectAtIndex:indexPath.row];
     
     return cell;
