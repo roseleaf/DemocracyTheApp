@@ -34,7 +34,7 @@
 {
     [super viewDidLoad];
     NSArray* results = [IssuesModel resultsForIssues:self.passingIssue];
-    self.yesVotesLabel.text = [NSString stringWithFormat:@"Yeasayes: %@",[results objectAtIndex:1]];
+    self.yesVotesLabel.text = [NSString stringWithFormat:@"Yeasayers: %@",[results objectAtIndex:1]];
     self.noVotesLabel.text = [NSString stringWithFormat:@"Naysayers: %@", [results objectAtIndex:2]];
     self.totalVotesLabel.text = [NSString stringWithFormat:@"Sayers: %@", [results objectAtIndex:0]];
     self.title = @"Results";
