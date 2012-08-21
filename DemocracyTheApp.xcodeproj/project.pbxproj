@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CB0128915E2C64B009B690E /* ResultsGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0128815E2C64B009B690E /* ResultsGraph.m */; };
 		96141CC915DF0A1200955F31 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141CC815DF0A1200955F31 /* UIKit.framework */; };
 		96141CCB15DF0A1200955F31 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141CCA15DF0A1200955F31 /* Foundation.framework */; };
 		96141CCD15DF0A1200955F31 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96141CCC15DF0A1200955F31 /* CoreGraphics.framework */; };
@@ -35,13 +36,17 @@
 		96DB901B15DF1F0B005E5550 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96DB901A15DF1F0B005E5550 /* Parse.framework */; };
 		96FD794615E05E300061A49B /* ResultsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FD794415E05E300061A49B /* ResultsViewController.m */; };
 		96FD794715E05E300061A49B /* ResultsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 96FD794515E05E300061A49B /* ResultsViewController.xib */; };
+		D79D32BA0FB44328AA928630 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BFC86B851639481D87739ADC /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1CB0128715E2C64B009B690E /* ResultsGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResultsGraph.h; path = ../ResultsGraph.h; sourceTree = "<group>"; };
+		1CB0128815E2C64B009B690E /* ResultsGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResultsGraph.m; path = ../ResultsGraph.m; sourceTree = "<group>"; };
+		7F8E08F8B2224A0D88DBC6D9 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		96141CC415DF0A1200955F31 /* DemocracyTheApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemocracyTheApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		96141CC815DF0A1200955F31 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		96141CCA15DF0A1200955F31 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		96141CCC15DF0A1200955F31 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		96141CC815DF0A1200955F31 /* UIKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		96141CCA15DF0A1200955F31 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		96141CCC15DF0A1200955F31 /* CoreGraphics.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		96141CD015DF0A1200955F31 /* DemocracyTheApp-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DemocracyTheApp-Info.plist"; sourceTree = "<group>"; };
 		96141CD215DF0A1200955F31 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		96141CD415DF0A1200955F31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -60,24 +65,25 @@
 		96141CF515DF15B600955F31 /* NewIssuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NewIssuesViewController.m; path = ../NewIssuesViewController.m; sourceTree = "<group>"; };
 		96141CF615DF15B600955F31 /* NewIssuesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NewIssuesViewController.xib; path = ../NewIssuesViewController.xib; sourceTree = "<group>"; };
 		96141CF915DF192E00955F31 /* Keys.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Keys.h; path = ../Keys.h; sourceTree = "<group>"; };
-		96141D1E15DF1AB400955F31 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		96141D1F15DF1AB400955F31 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
-		96141D2015DF1AB400955F31 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
-		96141D2115DF1AB400955F31 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
-		96141D2215DF1AB400955F31 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		96141D2315DF1AB400955F31 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		96141D2415DF1AB400955F31 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		96141D2515DF1AB400955F31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		96141D1E15DF1AB400955F31 /* AudioToolbox.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		96141D1F15DF1AB400955F31 /* CFNetwork.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		96141D2015DF1AB400955F31 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		96141D2115DF1AB400955F31 /* MobileCoreServices.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		96141D2215DF1AB400955F31 /* QuartzCore.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		96141D2315DF1AB400955F31 /* Security.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		96141D2415DF1AB400955F31 /* StoreKit.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		96141D2515DF1AB400955F31 /* SystemConfiguration.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		9693475715E038320023B92D /* IssueResponseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IssueResponseViewController.h; sourceTree = "<group>"; };
 		9693475815E038320023B92D /* IssueResponseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IssueResponseViewController.m; sourceTree = "<group>"; };
 		9693475915E038320023B92D /* IssueResponseViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IssueResponseViewController.xib; sourceTree = "<group>"; };
 		9693475D15E03CF10023B92D /* ShowIssueViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowIssueViewController.h; sourceTree = "<group>"; };
 		9693475E15E03CF20023B92D /* ShowIssueViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowIssueViewController.m; sourceTree = "<group>"; };
 		9693475F15E03CF20023B92D /* ShowIssueViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowIssueViewController.xib; sourceTree = "<group>"; };
-		96DB901A15DF1F0B005E5550 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Parse.framework; path = DemocracyTheApp/Parse.framework; sourceTree = "<group>"; };
+		96DB901A15DF1F0B005E5550 /* Parse.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Parse.framework; path = DemocracyTheApp/Parse.framework; sourceTree = "<group>"; };
 		96FD794315E05E300061A49B /* ResultsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsViewController.h; sourceTree = "<group>"; };
 		96FD794415E05E300061A49B /* ResultsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsViewController.m; sourceTree = "<group>"; };
 		96FD794515E05E300061A49B /* ResultsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ResultsViewController.xib; sourceTree = "<group>"; };
+		BFC86B851639481D87739ADC /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +103,7 @@
 				96141CC915DF0A1200955F31 /* UIKit.framework in Frameworks */,
 				96141CCB15DF0A1200955F31 /* Foundation.framework in Frameworks */,
 				96DB901B15DF1F0B005E5550 /* Parse.framework in Frameworks */,
+				D79D32BA0FB44328AA928630 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +116,7 @@
 				96141CCE15DF0A1200955F31 /* DemocracyTheApp */,
 				96141CC715DF0A1200955F31 /* Frameworks */,
 				96141CC515DF0A1200955F31 /* Products */,
+				7F8E08F8B2224A0D88DBC6D9 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -135,6 +143,7 @@
 				96141CC815DF0A1200955F31 /* UIKit.framework */,
 				96141CCA15DF0A1200955F31 /* Foundation.framework */,
 				96141CCC15DF0A1200955F31 /* CoreGraphics.framework */,
+				BFC86B851639481D87739ADC /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -162,6 +171,8 @@
 				96FD794315E05E300061A49B /* ResultsViewController.h */,
 				96FD794415E05E300061A49B /* ResultsViewController.m */,
 				96FD794515E05E300061A49B /* ResultsViewController.xib */,
+				1CB0128715E2C64B009B690E /* ResultsGraph.h */,
+				1CB0128815E2C64B009B690E /* ResultsGraph.m */,
 				96141CD815DF0A1200955F31 /* AppDelegate.m */,
 				96141CD715DF0A1200955F31 /* AppDelegate.h */,
 				96141CF915DF192E00955F31 /* Keys.h */,
@@ -191,6 +202,7 @@
 				96141CC015DF0A1200955F31 /* Sources */,
 				96141CC115DF0A1200955F31 /* Frameworks */,
 				96141CC215DF0A1200955F31 /* Resources */,
+				D6005D17D2604EFDA2AEC496 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +256,23 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		D6005D17D2604EFDA2AEC496 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		96141CC015DF0A1200955F31 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +287,7 @@
 				9693475A15E038320023B92D /* IssueResponseViewController.m in Sources */,
 				9693476015E03CF20023B92D /* ShowIssueViewController.m in Sources */,
 				96FD794615E05E300061A49B /* ResultsViewController.m in Sources */,
+				1CB0128915E2C64B009B690E /* ResultsGraph.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -328,6 +358,7 @@
 		};
 		96141CDD15DF0A1200955F31 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8E08F8B2224A0D88DBC6D9 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -337,6 +368,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemocracyTheApp/DemocracyTheApp-Prefix.pch";
 				INFOPLIST_FILE = "DemocracyTheApp/DemocracyTheApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/CorePlot_1.0/Binaries/iOS\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					QuartzCore,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -344,6 +385,7 @@
 		};
 		96141CDE15DF0A1200955F31 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F8E08F8B2224A0D88DBC6D9 /* Pods.xcconfig */;
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -353,6 +395,16 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "DemocracyTheApp/DemocracyTheApp-Prefix.pch";
 				INFOPLIST_FILE = "DemocracyTheApp/DemocracyTheApp-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../Downloads/CorePlot_1.0/Binaries/iOS\"",
+				);
+				OTHER_LDFLAGS = (
+					"-all_load",
+					"-ObjC",
+					"-framework",
+					QuartzCore,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

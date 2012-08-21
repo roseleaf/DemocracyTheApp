@@ -12,11 +12,11 @@
 #import "NewIssuesViewController.h"
 #import <Parse/Parse.h>
 #import "Keys.h"
-
+#import "CorePlot-CocoaTouch.h"
 
 
 @implementation AppDelegate
-
+@synthesize managedObjectContext;
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

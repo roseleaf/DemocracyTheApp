@@ -10,4 +10,8 @@
 
 @interface ResultsViewController : UIViewController
 @property (strong)NSString* passingIssue;
+@property (weak, nonatomic) IBOutlet UILabel *yesVotesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *noVotesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *totalVotesLabel;
+@property (strong) NSMutableArray* results;
 @end
