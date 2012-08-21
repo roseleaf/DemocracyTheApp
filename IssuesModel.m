@@ -29,9 +29,9 @@
 +(NSArray*)issues{
     
     PFQuery* query = [PFQuery queryWithClassName:@"Issues"];
-    NSArray* issues =  [query findObjects];//gives you NSArray of PFObjs
-
-    return issues;
+    NSArray* issues =  [query findObjects]; //gives you NSArray of PFObjs
+    NSArray* reversedArray = [[issues reverseObjectEnumerator] allObjects];
+    return reversedArray;
 }
 
 +(void) vote:(BOOL)vote forIssue:(NSString* )issueID{
