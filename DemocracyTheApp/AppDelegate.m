@@ -11,7 +11,7 @@
 #import "TabBarViewController.h"
 #import "NewIssuesViewController.h"
 #import <Parse/Parse.h>
-#import "Keys.h"
+#import "ParseKeys.h"
 #import "CorePlot-CocoaTouch.h"
 
 
